@@ -4,38 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table Maker</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/style.css">
+    <title>TableMaker</title>
+    <link rel="stylesheet" href="css/style1.css">
 </head>
 <body>
-    <div class="container">
-        <div class="box-input">
-            <textarea name="entradaTexto" id="areaTexto" cols="30" rows="10"></textarea>
-            <button id="btnTest">Test!</button>
-            <!--<button id="btnTest" onclick="obtenerDatos()">Test!</button>-->
-        </div>
-        <div class="flex-container">
-            <div class="flex-item team-name">Equipo#</div>
-            <div class="flex-item team-members">
-                <div class="members">
-                    <div class="member">
-                        <div class="data">
-                            <div class="alias">Obed</div>
-                            <div class="points">
-                                <div class="point">1</div>
-                                <div class="point">8</div>
-                                <div class="point">8</div>
-                                <div class="point">1</div>
-                            </div>
-                            <div class="total-points">15</div>
-                        </div>
+    <div class="grid">
+        <textarea id="areatexto" cols="50" rows="10"></textarea>
+        <div class="grid-section">
+            <div class="team">
+                <div class="name">Equipo</div>
+                <div class="alias">Amor</div>
+            </div>
+            <div class="members">
+                <div class="member">
+                    <div class="nickname">Fernanda</div>
+                    <div class="points">
+                        <div class="point">10</div>
+                        <div class="point">10</div>
+                        <div class="point">10</div>
                     </div>
+                    <div class="total-points">30</div>
+                </div>
+                <div class="member">
+                    <div class="nickname">Obed</div>
+                    <div class="points">
+                        <div class="point">10</div>
+                        <div class="point">10</div>
+                    </div>
+                    <div class="total-points">20</div>
                 </div>
             </div>
-            <div class="flex-item team-total-points">30</div>
+            <div class="team-total-points">
+                50
+            </div>
         </div>
     </div>
-    <script src="js/app.js"></script>
+    <script src="js/app2.js"></script>
 </body>
 </html>

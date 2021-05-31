@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+
+*{
+    font-family: 'Source Sans Pro';
+}
+
+body{
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid{
+    background-color: brown;
+    flex-grow: 1;
+    flex-shrink: 0;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.grid > div{
+    background-color: darkgrey;
+    padding: 1em;
+}
+.grid > div:hover{
+    border: 1px solid yellow;
+}
+
+#areaTexto{
+    flex-grow: 1;
+    position: relative;
+    width: 20px;
+}
+
+.grid-section{
+    display: grid;
+    grid-template-columns: 25% 60% 15%;
+}
+.team{
+    flex-shrink: 0;    
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.team > .name{
+    font-weight: 500;
+    font-size: 3em;
+}
+.team > .alias{
+    font-size: 1.7em;
+}
+.members{
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+}
+.member{
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    background-color: rgba(255, 255, 255,0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 0.3em;
+    font-size: 1.2rem;
+}
+.points{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 0.2em;
+}
+.point{
+    background-color: rgba(0, 0, 0,0.2);
+    text-align: center;
+}
+.point:first-child{
+    border-radius: 0.3em 0 0 0.3em;
+}
+.point:last-child{
+    border-radius: 0 0.3em 0.3em 0;
+}
+.total-points{
+    text-align: center;
+    font-weight: 700;
+}
+.team-total-points{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    font-weight: 900;
+}
