@@ -6,47 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table Maker</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
         <div class="box-input">
             <textarea name="entradaTexto" id="areaTexto" cols="30" rows="10"></textarea>
-            <button id="btnTest" onclick="obtenerDatos()">Test!</button>
+            <button id="btnTest">Test!</button>
+            <!--<button id="btnTest" onclick="obtenerDatos()">Test!</button>-->
         </div>
-        <div class="test-output">
-            <div class="team">
-                <div class="asset-team"></div>
-                <div class="name-team">
-                    Equipo1
-                </div>
+        <div class="flex-container">
+            <div class="flex-item team-name">Equipo#</div>
+            <div class="flex-item team-members">
                 <div class="members">
-                    <div class="row">
-                        <div class="name-member">
-                            Obed
+                    <div class="member">
+                        <div class="data">
+                            <div class="alias">Obed</div>
+                            <div class="points">
+                                <div class="point">1</div>
+                                <div class="point">8</div>
+                                <div class="point">8</div>
+                                <div class="point">1</div>
+                            </div>
+                            <div class="total-points">15</div>
                         </div>
-                        <div class="point">10</div>
-                        <div class="point">10</div>
-                        <div class="point">20</div>
-                        <div class="totalPoints">40</div>
-                        <div class="asset"><img src="icons/trofeo.png"></div>
                     </div>
-                    <div class="row">
-                        <div class="name-member">
-                            Obed
-                        </div>
-                        <div class="point">10</div>
-                        <div class="point">10</div>
-                        <div class="point">10</div>
-                        <div class="totalPoints">30</div>
-                        <div class="asset"></div>
-                    </div>
-                </div>
-                <div class="globalTotalPoints">
-                    60
                 </div>
             </div>
+            <div class="flex-item team-total-points">30</div>
         </div>
     </div>
-    <script src="js/app1.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

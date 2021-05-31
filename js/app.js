@@ -1,8 +1,8 @@
 
 
-let textarea = document.getElementById('txtEntrada'); // Hago referencia a mi textarea en html
+let areaTexto = document.getElementById('areaTexto'); // Hago referencia a mi areaTexto en html
 let btnTest = document.getElementById('btnTest'); // Hago referencia a mi button en html
-let texto; //Aquí almacenaré el texto completo del textarea
+let texto; //Aquí almacenaré el texto completo del areaTexto
 let lineas; //Aquí almacenaré las líneas independientes.
 let datos; //Aquí alamacenaré los datos de las líneas independientes
 
@@ -12,7 +12,7 @@ let totalPuntuaciones = 0; //Aquí sumaré las puntuaciones
 
 btnTest.addEventListener('click',(e)=>{ //Le agrego un evento <click> a mi botón.
     //console.log(e.key);
-    texto = textarea.value; // Extraigo el texto del textarea.
+    texto = areaTexto.value; // Extraigo el texto del areaTexto.
     lineas = texto.split('\n'); //Separo sus líneas del texto cada vez que encuentre un salto de línea.
     lineas.forEach(linea => { //Por cada línea.
         //console.log(linea);
